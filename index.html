@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="title">Checkout</div>
+      <h1 class="title">Checkout</h1>
 
       <div class="cart">
         <div class="cart__item">
@@ -53,9 +53,68 @@
         </div>
       </div>
 
-      <div class="contact-information"></div>
+      <div class="main-area">
+        <div class="contact-information">
+          <h2>Contact Information</h2>
 
-      <div class="shipping-address"></div>
+          <form action="">
+            <div class="contact-information__form__email">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" value="Enter your email..." />
+            </div>
+            <div class="contact-information__form__phone">
+              <label for="phone">Phone</label>
+              <input type="phone" id="phone" name="phone" value="Enter your phone..." />
+            </div>
+          </form>
+        </div>
+
+        <div class="shipping-address">
+          <h2>Shipping Address</h2>
+
+          <form action="">
+            <div class="shipping-address__form__full-name">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" value="Rodney Cotton" />
+            </div>
+            <div class="shipping-address__form__address">
+              <label for="address">Phone</label>
+              <input type="text" id="address" name="address" value="Your address..." />
+            </div>
+            <div class="shipping-address__form__city">
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" value="Your city..." />
+            </div>
+            <div class="shipping-address__form__country-and-postal-code">
+              <div class="shipping-address__form__country">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="Your country">Your country...</option>
+                  <option value="spain">Spain</option>
+                  <option value="france">France</option>
+                  <option value="UK">UK</option>
+                </select>
+              </div>
+              <div class="shipping-address__form__postal-code">
+                <label for="postal-code">Postal code</label>
+                <input
+                  type="text"
+                  id="postal-code"
+                  name="postal-code"
+                  value="Your postal code..."
+                />
+              </div>
+            </div>
+            <div class="shipping-address__form__checkbox">
+              <input type="checkbox" id="save" name="save" value="save" />
+              <label for="save">Save this information for next time</label>
+            </div>
+          </form>
+        </div>
+        <div class="continue-button-area">
+          <button class="continue-button-area__button">Continue</button>
+        </div>
+      </div>
 
       <footer>Xavi Guasch @ DevChallenges.io</footer>
     </div>
