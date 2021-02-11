@@ -1,8 +1,20 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   color: #4e5150;
+}
+
+input,
+select,
+button {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .title {
@@ -15,6 +27,10 @@ body {
   padding: 0.6em;
   width: 95%;
 }
+
+/* ----------------------------------------------- */
+/* CART */
+/* ----------------------------------------------- */
 
 .cart {
   background-color: #f2f2f2;
@@ -75,7 +91,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 1.1em;
+  margin-top: 0.65em;
   width: 70%;
   border: 1px solid #828282;
   border-radius: 0.7em;
@@ -100,4 +116,93 @@ body {
 .cart__total__total {
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid #bdbdbd;
+  padding: 0 0.5em;
+}
+
+/* ----------------------------------------------- */
+/* MAIN AREA FORM */
+/* ----------------------------------------------- */
+
+.main-area {
+  margin: 2em 0.5em 1em;
+}
+
+.contact-information h2,
+.shipping-address h2 {
+  font-size: 1rem;
+}
+
+.contact-information,
+.shipping-address {
+  font-size: 0.75rem;
+  margin-bottom: 3em;
+}
+
+.contact-information__form,
+.shipping-address__form {
+  margin-bottom: 2em;
+}
+
+.contact-information label,
+.shipping-address label {
+  display: block;
+  color: #4f4f4f;
+  margin-bottom: 0.4em;
+  font-size: 0.625rem;
+}
+
+.contact-information input,
+.shipping-address input,
+.shipping-address select {
+  font-size: 0.75rem;
+  width: 100%;
+  border-radius: 1em;
+  border: 1px solid #828282;
+  color: #828282;
+  padding: 1em 1em;
+}
+
+.shipping-address__form__country-and-postal-code {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shipping-address__form--country {
+  width: 150px;
+}
+
+.shipping-address select {
+  width: 100%;
+}
+
+.shipping-address__form__checkbox {
+  position: relative;
+}
+
+.shipping-address__form__checkbox input {
+  position: absolute;
+  right: 0;
+}
+
+.continue-button-area {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.continue-button-area__button {
+  background-color: #f2994a;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 1.2em 3em;
+  border: none;
+  border-radius: 0.5em;
+}
+
+footer {
+  margin-top: 6em;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #a9a9a9;
+  padding: 1em 0;
 }

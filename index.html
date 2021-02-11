@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
@@ -73,11 +77,12 @@
           <h2>Contact Information</h2>
 
           <form action="">
-            <div class="contact-information__form__email">
+            <div class="contact-information__form">
               <label for="email">E-mail</label>
+
               <input type="email" id="email" name="email" value="Enter your email..." />
             </div>
-            <div class="contact-information__form__phone">
+            <div class="contact-information__form">
               <label for="phone">Phone</label>
               <input type="phone" id="phone" name="phone" value="Enter your phone..." />
             </div>
@@ -88,29 +93,30 @@
           <h2>Shipping Address</h2>
 
           <form action="">
-            <div class="shipping-address__form__full-name">
+            <div class="shipping-address__form">
               <label for="name">Full name</label>
               <input type="text" id="name" name="name" value="Rodney Cotton" />
             </div>
-            <div class="shipping-address__form__address">
+            <div class="shipping-address__form">
               <label for="address">Phone</label>
               <input type="text" id="address" name="address" value="Your address..." />
             </div>
-            <div class="shipping-address__form__city">
+            <div class="shipping-address__form">
               <label for="city">City</label>
               <input type="text" id="city" name="city" value="Your city..." />
             </div>
+
             <div class="shipping-address__form__country-and-postal-code">
-              <div class="shipping-address__form__country">
+              <div class="shipping-address__form shipping-address__form--country">
                 <label for="country">Country</label>
-                <select id="country" name="country">
-                  <option value="Your country">Your country...</option>
+                <select id="country" name="country" required>
+                  <option value="" disabled selected>Your country...</option>
                   <option value="spain">Spain</option>
                   <option value="france">France</option>
                   <option value="UK">UK</option>
                 </select>
               </div>
-              <div class="shipping-address__form__postal-code">
+              <div class="shipping-address__form shipping-address__form--postal-code">
                 <label for="postal-code">Postal code</label>
                 <input
                   type="text"
@@ -120,10 +126,11 @@
                 />
               </div>
             </div>
-            <div class="shipping-address__form__checkbox">
-              <input type="checkbox" id="save" name="save" value="save" />
-              <label for="save">Save this information for next time</label>
-            </div>
+            <label class="shipping-address__form__checkbox"
+              >Save this information for next time
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
           </form>
         </div>
         <div class="continue-button-area">
