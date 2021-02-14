@@ -16,9 +16,12 @@
     <title>Checkout Page</title>
   </head>
   <body>
-    <h1 class="title">Checkout</h1>
     <div class="container">
-      <div class="cart">
+      <header>
+        <h1 class="title">Checkout</h1>
+      </header>
+
+      <section class="cart">
         <div class="cart__item">
           <div class="cart__item__image">
             <img src="./resources/photo1.png" alt="bag picture" />
@@ -31,9 +34,11 @@
                 <p class="cart__item__info__data__prices__previous">$94.99</p>
               </div>
               <div class="cart__item__info__quantity">
-                <button class="cart__item__info__quantity__button">-</button>
-                <p class="cart__item__info__quantity__number">1</p>
-                <button class="cart__item__info__quantity__button">+</button>
+                <button id="subtract-1" class="cart__item__info__quantity__button">
+                  -
+                </button>
+                <p id="qty-1" class="cart__item__info__quantity__number">1</p>
+                <button id="add-1" class="cart__item__info__quantity__button">+</button>
               </div>
             </div>
           </div>
@@ -51,9 +56,11 @@
                 <p class="cart__item__info__data__prices__previous">$124.99</p>
               </div>
               <div class="cart__item__info__quantity">
-                <button class="cart__item__info__quantity__button">-</button>
-                <p class="cart__item__info__quantity__number">1</p>
-                <button class="cart__item__info__quantity__button">+</button>
+                <button id="subtract-2" class="cart__item__info__quantity__button">
+                  -
+                </button>
+                <p id="qty-2" class="cart__item__info__quantity__number">1</p>
+                <button id="add-2" class="cart__item__info__quantity__button">+</button>
               </div>
             </div>
           </div>
@@ -66,18 +73,20 @@
           </div>
           <div class="cart__total__total">
             <p>Total</p>
-            <p>$148.98</p>
+            <p id="total-amount">$148.98</p>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="main-area">
+      <section class="main-area">
         <div class="contact-information">
           <h2>Contact Information</h2>
 
           <form action="">
             <div class="contact-information__form">
               <label for="email">E-mail</label>
+
+              <span class="material-icons">email</span>
 
               <input type="email" id="email" name="email" value="Enter your email..." />
             </div>
@@ -125,19 +134,31 @@
                 />
               </div>
             </div>
-            <label class="shipping-address__form__checkbox"
-              >Save this information for next time
-              <input type="checkbox" checked="checked" />
-              <span class="checkmark"></span>
-            </label>
+
+            <div class="shipping-address__form__checkbox">
+              <input
+                type="checkbox"
+                name="save"
+                id="save"
+                class="shipping-address__form__checkbox__input__save"
+              />
+              <label
+                class="shipping-address__form__checkbox__input__save__label"
+                for="save"
+              >
+                Save this information for next time
+              </label>
+            </div>
           </form>
         </div>
         <div class="continue-button-area">
           <button class="continue-button-area__button">Continue</button>
         </div>
-      </div>
+      </section>
 
       <footer>Xavi Guasch @ DevChallenges.io</footer>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
