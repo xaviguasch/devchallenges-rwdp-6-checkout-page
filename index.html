@@ -83,10 +83,15 @@
       </section>
 
       <section class="main-area">
-        <div class="contact-information">
-          <h2>Contact Information</h2>
+        <form
+          id="save-later-form"
+          action="successful.html"
+          autocomplete="on"
+          onsubmit="saveData()"
+        >
+          <div class="contact-information">
+            <h2>Contact Information</h2>
 
-          <form action="">
             <div class="contact-information__form">
               <label for="email">E-mail</label>
 
@@ -98,13 +103,11 @@
               <label for="phone">Phone</label>
               <input type="phone" id="phone" name="phone" value="Enter your phone..." />
             </div>
-          </form>
-        </div>
+          </div>
 
-        <div class="shipping-address">
-          <h2>Shipping Address</h2>
+          <div class="shipping-address">
+            <h2>Shipping Address</h2>
 
-          <form action="">
             <div class="shipping-address__form">
               <label for="name">Full name</label>
               <input type="text" id="name" name="name" value="Rodney Cotton" />
@@ -153,11 +156,11 @@
                 Save this information for next time
               </label>
             </div>
-          </form>
-        </div>
-        <div class="continue-button-area">
-          <button class="continue-button-area__button">Continue</button>
-        </div>
+          </div>
+          <div class="continue-button-area">
+            <button class="continue-button-area__button">Continue</button>
+          </div>
+        </form>
       </section>
 
       <footer>Xavi Guasch @ DevChallenges.io</footer>
