@@ -185,6 +185,15 @@ button {
   display: flex;
 }
 
+.shipping-address__form__checkbox__input__save {
+  max-width: 1em;
+  margin-right: 1em;
+}
+
+.shipping-address__form__checkbox__input__save__label {
+  line-height: 2;
+}
+
 .continue-button-area {
   display: flex;
   justify-content: flex-end;
