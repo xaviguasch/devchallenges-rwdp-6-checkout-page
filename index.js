@@ -1,4 +1,5 @@
-// Selectors
+// CART FUNCTIONALITY
+
 const add1 = document.querySelector('#add-1')
 const add2 = document.querySelector('#add-2')
 const subtract1 = document.querySelector('#subtract-1')
@@ -53,3 +54,17 @@ subtract2.addEventListener('click', () => {
   operate('subtract', '#qty-2')
   calculateTotal()
 })
+
+// ------------------------------------------------------ //
+
+//  FORM FUNCTIONALITY
+const sendForm = document.querySelector('#send-form')
+
+sendForm.onsubmit = (e) => {
+  e.preventDefault()
+  showConfirmationMessage()
+}
+
+const showConfirmationMessage = () => {
+  alert('Thanks for shopping with us!')
+}
