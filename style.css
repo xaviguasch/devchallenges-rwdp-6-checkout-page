@@ -9,6 +9,11 @@ body {
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   color: #4e5150;
+  min-height: 100vh;
+}
+
+h2 {
+  margin-bottom: 1em;
 }
 
 input,
@@ -17,17 +22,17 @@ button {
   font-family: 'Montserrat', sans-serif;
 }
 
+.outer-container {
+  margin: 0 auto;
+  padding: 0.2em 0.5em;
+  width: 95%;
+  max-width: 400px;
+}
+
 .title {
   font-size: 1.5rem;
-  margin: 2em 1.1em 0em;
+  margin: 1.2em 0.2em 1em;
 }
-
-.container {
-  margin: 1em auto;
-  padding: 0.6em;
-  width: 95%;
-}
-
 /* ----------------------------------------------- */
 /* CART */
 /* ----------------------------------------------- */
@@ -117,7 +122,6 @@ button {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #bdbdbd;
-  padding: 0 0.5em;
 }
 
 /* ----------------------------------------------- */
@@ -179,11 +183,6 @@ button {
 
 .shipping-address__form__checkbox {
   display: flex;
-  justify-content: flex-start;
-}
-
-.shipping-address__form__checkbox__input__save__label {
-  display: block;
 }
 
 .continue-button-area {
@@ -209,13 +208,40 @@ footer {
 }
 
 @media (min-width: 850px) {
+  .outer-container {
+    height: 100vh;
+    max-width: none;
+  }
+  header {
+    max-width: 900px;
+    margin: 0 auto;
+  }
   .container {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: flex-start;
+    gap: 4em;
+    max-width: 900px;
+    margin: 0 auto;
   }
+  .main-area {
+    margin-top: 0;
+    flex: 2 1 auto;
+  }
+
+  /* .shipping-address__form--country {
+    width: 100%;
+    padding-right: 5em;
+  } */
+
   .cart {
-    margin-top: 3em;
-    margin-left: 3em;
+    max-width: 350px;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 }
